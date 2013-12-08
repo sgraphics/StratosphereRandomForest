@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: eu.stratosphere:pact-clients:0.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-clients/0.4-SNAPSHOT/pact-clients-0.4-20131207.095204-68.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-clients/0.4-SNAPSHOT/pact-clients-0.4-20131207.095204-68-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-clients/0.4-SNAPSHOT/pact-clients-0.4-20131207.095204-68-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

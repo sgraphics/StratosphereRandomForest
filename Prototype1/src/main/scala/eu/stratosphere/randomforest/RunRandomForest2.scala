@@ -12,6 +12,19 @@ import java.util.Map
 import scala.util.Random
 import java.util.ArrayList
 import eu.stratosphere.scala.DataSource
+import scala.Array.canBuildFrom
+import eu.stratosphere.pact.client.LocalExecutor
+import eu.stratosphere.pact.common.`type`.base.PactInteger
+import eu.stratosphere.pact.common.`type`.base.PactString
+import eu.stratosphere.scala.operators._
+import eu.stratosphere.scala.ScalaPlan
+import eu.stratosphere.scala.DataSet
+import eu.stratosphere.scala.analysis.GlobalSchemaPrinter
+import eu.stratosphere.scala.DataSource
+import eu.stratosphere.scala.ScalaPlan
+import eu.stratosphere.scala.TextFile
+import eu.stratosphere.pact.common.`type`.base.PactInteger
+import eu.stratosphere.pact.common.`type`.base.PactString
 
 class RandomForest2 (trees : Array[Array[TreeNode2]], features: Array[Int]) extends PlanAssembler with PlanAssemblerDescription with Serializable {
   override def getDescription() = {
@@ -69,10 +82,11 @@ class RandomForest2 (trees : Array[Array[TreeNode2]], features: Array[Int]) exte
       		(treeId, nodeId, bestSplit)
       }
     
-    val sink = dataReduce.write(outputPath, RecordDataSinkFormat("\n", ","))
+    val sink = dataReduce.write(outputPath, CsvOutputFormat("\n", ","))
     
     new ScalaPlan(Seq(sink))
   }
+  
   
   //tree id, feature id, value, label, bagging id
   def getSplitInfo(featureId : Int, histogram : Array[(Int, Int, Int, Int, Int)]) = {

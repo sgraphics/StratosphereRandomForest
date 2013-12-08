@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: eu.stratosphere:nephele-queuescheduler:0.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/nephele-queuescheduler/0.4-SNAPSHOT/nephele-queuescheduler-0.4-20131207.095012-69.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/nephele-queuescheduler/0.4-SNAPSHOT/nephele-queuescheduler-0.4-20131207.095012-69-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/nephele-queuescheduler/0.4-SNAPSHOT/nephele-queuescheduler-0.4-20131207.095012-69-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

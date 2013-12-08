@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: eu.stratosphere:pact-compiler:0.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-compiler/0.4-SNAPSHOT/pact-compiler-0.4-20131207.095153-68.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-compiler/0.4-SNAPSHOT/pact-compiler-0.4-20131207.095153-68-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/stratosphere/pact-compiler/0.4-SNAPSHOT/pact-compiler-0.4-20131207.095153-68-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

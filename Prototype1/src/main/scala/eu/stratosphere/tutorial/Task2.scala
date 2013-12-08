@@ -36,7 +36,7 @@ class Task2 extends PlanAssembler with PlanAssemblerDescription with Serializabl
 		.map{x => (line.split(",")(0).toInt, x._1, x._2.count(_ => true))}
     }
     
-    val sink = termFrequencies.write(outputPath, RecordDataSinkFormat("\n", ","))
+    val sink = termFrequencies.write(outputPath, CsvOutputFormat("\n", ","))
     
     new ScalaPlan(Seq(sink))
     
